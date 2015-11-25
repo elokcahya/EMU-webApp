@@ -104,7 +104,10 @@
         "drawZeroLine": true,
         "bundleComments": false,
         "bundleFinishedEditing": false,
-        "showPerspectivesSidebar": false
+        "showPerspectivesSidebar": false,
+        "hierarchyPanningLimit": 0.95,
+        "hierarchyCrossAxisPan": false,
+        "hierarchyCrossAxisZoom": false
     },
     "activeButtons": {
         "addLevelSeg": false,

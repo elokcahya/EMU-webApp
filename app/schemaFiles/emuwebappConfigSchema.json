@@ -519,9 +519,18 @@
 				},
 				"showPerspectivesSidebar": {
 					"type": "boolean"
+				},
+				"hierarchyPanningLimit": {
+					"type": "number"
+				},
+				"hierarchyCrossAxisPan": {
+					"type": "boolean"
+				},
+				"hierarchyCrossAxisZoom": {
+					"type": "boolean"
 				}
 			},
-			"required": ["playback", "correctionTool", "editItemSize", "editItemName", "deleteItemBoundary", "deleteItem", "deleteLevel", "addItem", "drawCrossHairs", "drawSampleNrs", "drawZeroLine", "bundleComments", "bundleFinishedEditing", "showPerspectivesSidebar"],
+			"required": ["playback", "correctionTool", "editItemSize", "editItemName", "deleteItemBoundary", "deleteItem", "deleteLevel", "addItem", "drawCrossHairs", "drawSampleNrs", "drawZeroLine", "bundleComments", "bundleFinishedEditing", "showPerspectivesSidebar", "hierarchyPanningLimit", "hierarchyCrossAxisPan", "hierarchyCrossAxisZoom"],
 			"additionalProperties": false
 
 		},

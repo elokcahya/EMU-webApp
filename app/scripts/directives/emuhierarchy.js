@@ -44,9 +44,9 @@ angular.module('emuwebApp')
 	scope.scaleExtent = [0.5, 10];
 
 	// Possible pan range
-	scope.panningLimit = 0.95;
-	scope.allowCrossAxisZoom = false;
-	scope.allowCrossAxisPan = false;
+	scope.panningLimit = ConfigProviderService.vals.restrictions.hierarchyPanningLimit;
+	scope.allowCrossAxisZoom = ConfigProviderService.vals.restrictions.hierarchyCrossAxisZoom;
+	scope.allowCrossAxisPan = ConfigProviderService.vals.restrictions.hierarchyCrossAxisPan;
 
 	// Boundaries for enforcing pan range
 	scope.timeAxisStartPosition = undefined;
