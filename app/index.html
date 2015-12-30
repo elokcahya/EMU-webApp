@@ -97,6 +97,8 @@
     </script>
 
     <!-- build:js scripts/emuwebAppExternal.min.js -->
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="bower_components/jquery-ui/jquery-ui.js"></script>
     <script src="node_modules/angular/angular.js"></script>
@@ -113,7 +115,12 @@
 
     <!-- build:js scripts/emuwebApp.min.js -->
     <script src="scripts/prototypeexpansions.js"></script>
-    <script src="scripts/app.js"></script>
+    <script>
+        System.config({
+            packages: {'scripts': {defaultExtension: 'js'}}
+        });
+        System.import('scripts/app.module');
+    </script>
     <script src="scripts/services/ConfigProviderService.js"></script>
     <script src="scripts/controllers/main.js"></script>
     <script src="scripts/directives/level.js"></script>

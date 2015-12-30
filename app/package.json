@@ -2,9 +2,11 @@
 	"name": "EMU-webApp",
 	"version": "0.0.32",
 	"description": "The EMU-webApp is an online and offline Web-App for labeling, visualizing and correcting speech and derived speech data.",
-	"author": "Raphael Winkelmann, Georg Raess",
+	"author": "Raphael Winkelmann, Georg Raess, Markus Jochim",
 	"license": "MIT",
 	"dependencies": {
+		"systemjs": "~0.19.6",
+
 		"angular-mocks": "~1.3.0",
 		"angular-filter": "~0.4.9",
 		"angular-markdown-directive": "~0.3.1",

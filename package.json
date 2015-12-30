@@ -4,9 +4,11 @@
   "description": "The EMU-webApp is an online and offline Web-App for labeling, visualizing and correcting speech and derived speech data.",
   "main": "app/scripts/app.js",
   "scripts": {
-    "install": "node node_modules/protractor/bin/webdriver-manager update"
+    "install": "node node_modules/protractor/bin/webdriver-manager update",
+    "typings": "cd app; node ../node_modules/tsd/build/cli.js install angular angular-route angular-resource angular-mocks jasmine",
+    "tsc": "tsc -p . -w"
   },
-  "author": "Raphael Winkelmann, Georg Raess",
+  "author": "Raphael Winkelmann, Georg Raess, Markus Jochim",
   "license": "MIT",
   "readmeFilename": "README.md",
   "repository": {
@@ -68,7 +70,9 @@
     "phantomjs": "~1.9.7-12",
     "protractor": "~1.4.0",
     "time-grunt": "~0.1.1",
-    "ws": "~0.4.31"
+    "ws": "~0.4.31",
+    "typescript": "~1.7.5",
+    "tsd": "~0.6.5"
   },
   "engines": {
     "node": ">=0.8.0"
